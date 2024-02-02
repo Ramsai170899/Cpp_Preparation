@@ -1,4 +1,4 @@
-// data types in c++ are int, double, char, string , bool.
+// info : data types in c++ are int, double, char, string , bool.
 
 #include <iostream>
 using namespace std;
