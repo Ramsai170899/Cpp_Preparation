@@ -1,4 +1,4 @@
-// sum of natural numbers before "n"
+// sum of natural numbers before "n" => n*(n-1)/2
 
 #include <iostream>
 using namespace std;
