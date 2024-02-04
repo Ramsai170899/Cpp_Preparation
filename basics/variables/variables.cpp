@@ -18,6 +18,4 @@ int main()
     cout << "value of c is " << c << endl;
     cout << "value of x is " << x << endl;
     cout << "value of name is " << name << endl;
-
-    return 0;
 }
