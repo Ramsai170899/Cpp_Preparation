@@ -1,4 +1,4 @@
-// Hierarchical or Multilevel inheritance.
+// Multilevel inheritance.
 
 #include <iostream>
 using namespace std;
