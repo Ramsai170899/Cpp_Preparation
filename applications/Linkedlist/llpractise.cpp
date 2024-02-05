@@ -80,6 +80,26 @@ void deleteattail(node *&head)
     temp->next = NULL;
 }
 
+void getlength(node *&head)
+{
+    node *temp = head;
+    if (temp == NULL)
+    {
+        cout << "\n Length is : " << 0 << endl;
+    }
+    else if (temp->next == NULL)
+    {
+        cout << "\n Length is : " << 1 << endl;
+    }
+    int count = 0;
+    while (temp != NULL)
+    {
+        count = count + 1;
+        temp = temp->next;
+    }
+    cout << "\nLength is : " << count << endl;
+}
+
 void display(node *head)
 {
     node *temp = head;
@@ -117,6 +137,8 @@ int main()
 
     deleteattail(head);
     display(head);
+
+    getlength(head);
 
     return 0;
 }
