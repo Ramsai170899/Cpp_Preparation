@@ -80,6 +80,30 @@ void deleteattail(node *&head)
     temp->next = NULL;
 }
 
+void deleteat(node *&head, int pos)
+{
+    if (pos == 0)
+    {
+        head = head->next;
+    }
+
+    node *temp = head;
+    int count = 1;
+
+    while (temp != NULL)
+    {
+        if (pos == count)
+        {
+            temp->next = temp->next->next;
+        }
+        else
+        {
+            temp = temp->next;
+        }
+        count++;
+    }
+}
+
 void getlength(node *&head)
 {
     node *temp = head;
@@ -138,7 +162,13 @@ int main()
     deleteattail(head);
     display(head);
 
+    deleteat(head, 0);
+    display(head);
+
     getlength(head);
+
+    deleteat(head, 2);
+    display(head);
 
     return 0;
 }
