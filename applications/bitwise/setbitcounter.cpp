@@ -16,7 +16,7 @@ int coutsetbits(int n)
 
 int main()
 {
-    cout << coutsetbits(20) << endl;
+    cout << coutsetbits(25) << endl;
 
     return 0;
 }
