@@ -42,15 +42,15 @@ int main()
     cout << "Sorted array (int): ";
     printElements(intArray);
 
-    // Sorting doubles
-    vector<double> doubleArray = {3.14, 1.1, 2.71, 0.5, 2.0};
-    cout << "\nOriginal array (double): ";
-    printElements(doubleArray);
+    // // Sorting doubles
+    // vector<double> doubleArray = {3.14, 1.1, 2.71, 0.5, 2.0};
+    // cout << "\nOriginal array (double): ";
+    // printElements(doubleArray);
 
-    bubbleSort(doubleArray);
+    // bubbleSort(doubleArray);
 
-    cout << "Sorted array (double): ";
-    printElements(doubleArray);
+    // cout << "Sorted array (double): ";
+    // printElements(doubleArray);
 
     return 0;
 }
