@@ -5,11 +5,11 @@ void kthbit(int n, int k)
 {
     if (n >> (k - 1) & 1 == 1)
     {
-        cout << k << "th bit is set to " << (n >> (k - 1) & 1) << endl;
+        cout << "bit "<< k <<" is set to " << (n >> (k - 1) & 1) << endl;
     }
     else
     {
-        cout << k << "th bit is set to " << (n >> (k - 1) & 1) << endl;
+        cout << "bit " << k << " is set to " << (n >> (k - 1) & 1) << endl;
     }
 }
 

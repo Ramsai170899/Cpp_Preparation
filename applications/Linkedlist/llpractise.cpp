@@ -124,6 +124,24 @@ void getlength(node *&head)
     cout << "\nLength is : " << count << endl;
 }
 
+node *reverse(node *&head)
+{
+    node *prevptr = NULL;
+    node *currptr = head;
+    node *nextptr;
+
+    while (currptr != NULL)
+    {
+        nextptr = currptr->next;
+        currptr->next = prevptr;
+
+        prevptr = currptr;
+        currptr = nextptr;
+    }
+
+    return prevptr;
+}
+
 void display(node *head)
 {
     node *temp = head;
@@ -150,25 +168,13 @@ int main()
     insertathead(head, 1);
     display(head);
 
-    insertathead(head, 2);
-    display(head);
-
-    deleteathead(head);
-    display(head);
-
-    deleteathead(head);
-    display(head);
-
     deleteattail(head);
-    display(head);
-
-    deleteat(head, 0);
     display(head);
 
     getlength(head);
 
-    deleteat(head, 2);
-    display(head);
+    node *newhead = reverse(head);
+    display(newhead);
 
     return 0;
 }
