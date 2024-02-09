@@ -60,7 +60,7 @@ bool issafe(int row, int col, vector<vector<int>> &board, int n)
 
 void solve(int col, vector<vector<int>> &ans, vector<vector<int>> &board, int n)
 {
-    // base case
+    // base case ending point.
     if (col == n)
     {
         addsolution(ans, board, n);
